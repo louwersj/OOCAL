@@ -11,16 +11,16 @@ Function error code : In case of an error retrieving the values the function wil
 Additional info     :
 
 ##### getCcVersions
-Function input      : 
-Function output     : 
-Function error code : 
-Additional info     :
+Function input      :  
+Function output     :  
+Function error code :  
+Additional info     :  
 
 ##### getCcAmiId
-Function input      : 
-Function output     : 
-Function error code : 
-Additional info     :
+Function input      :  
+Function output     :  
+Function error code :  
+Additional info     : 
 
 ##### getCcAmiLaunchIndex
 Function input      : 
