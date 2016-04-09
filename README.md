@@ -1,2 +1,2 @@
 # OOPCC-API
-bnhkjdhsakj
+OOPCC (Open Oracle Public Cloud
