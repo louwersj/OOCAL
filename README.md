@@ -1,2 +1,2 @@
-# OOPCC-API
-OOPCC (Open Oracle Public Cloud
+# Open Oracle Cloud API Library (OOCAL)
+OOCAL, Open Oracle Cloud API Library
