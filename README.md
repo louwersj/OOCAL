@@ -4,7 +4,7 @@ OOCAL, Open Oracle Public Cloud API Library is set of pre-defind bash functions 
 ## Compute Cloud Functions
 All functions used for the compute functions from th Oracle Public Cloud are stored in the opc_comp_api_functions.lib functions library. The below mentiond functions can be found in this library. 
 
-_ccVm functions_
+_ccVm functions_**
 Functions used for internal use within the VM are recognizable as they start with ccVm "Compute Cloud Virtual Machine". The functions take "aim" against the internal API which can be accessed from within a VM at http://192.0.0.192/. This can be used (for example) to configure a newely created virtual machine based upon this information.
 
 ##### _ccVmGetNumOfVersions_
