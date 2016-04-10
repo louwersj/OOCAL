@@ -9,9 +9,9 @@ Functions used for internal use within the VM are recognizable as they start wit
 
 ##### _ccVmGetNumOfVersions_
 _Function input_      : (none)  
-Function output     : number of API versions currently available in the public API   
-Function error code : In case of an error retrieving the values the function will return the code ERROR  
-Additional info     :  
+_Function output_     : number of API versions currently available in the public API   
+_Function error code_ : In case of an error retrieving the values the function will return the code ERROR  
+_Additional info_     :  
 
 ##### _ccVmGetVersions_
 
