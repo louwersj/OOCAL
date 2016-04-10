@@ -13,20 +13,26 @@ Function output     : number of API versions currently available in the public A
 Function error code : In case of an error retrieving the values the function will return the code ERROR  
 Additional info     :  
 
-##### ccVmGetVersions
+##### _ccVmGetVersions_
 
-##### ccVmGetAmiId
+##### _ccVmGetAmiId_
 
-##### ccVmGetAmiLaunchIndex
+##### _ccVmGetAmiLaunchIndex_
 
-##### ccVmGetAmiManifestPath
+##### _ccVmGetAmiManifestPath_
 
-##### ccVmGetAncestorAmiIds
+##### _ccVmGetAncestorAmiIds_
 
-##### ccVmGetBlockDeviceMapping
+##### _ccVmGetBlockDeviceMapping_
 
-##### ccVmGetInstanceId
-#####
-#####
-#####
-#####
+##### _ccVmGetInstanceId_
+##### _ccVmGetInstanceType_
+##### _ccVmGetKernelId_
+##### _ccVmGetLocalHostname_
+##### _ccVmGetLocalIpv4_
+##### _ccVmGetProductCodes_
+##### _ccVmGetPublicHostname_
+##### _ccVmGetPublicIpv4_
+##### _ccVmGetRamdiskId_
+##### _ccVmGetReservationId_
+##### _ccVmGetSecurityGroups_
