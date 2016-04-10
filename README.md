@@ -23,6 +23,10 @@ _Additional info_     :
 
 ##### _ccVmGetAncestorAmiIds_
 
+##### _ccVmGetNumOfPublicKeys_
+
+##### _ccVmGetPublicKeyType_
+
 ##### _ccVmGetBlockDeviceMapping_
 
 ##### _ccVmGetInstanceId_
