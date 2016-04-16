@@ -8,10 +8,14 @@ All functions used for the compute functions from th Oracle Public Cloud are sto
 Functions used for internal use within the VM are recognizable as they start with ccVm "Compute Cloud Virtual Machine". The functions take "aim" against the internal API which can be accessed from within a VM at http://192.0.0.192/. This can be used (for example) to configure a newely created virtual machine based upon this information.
 
 ##### _ccVmGetNumOfVersions_
-_Function input_      : (none)  
-_Function output_     : number of API versions currently available in the public API   
-_Function error code_ : In case of an error retrieving the values the function will return the code ERROR  
+_Function input_      : 
+  (none)  
+_Function output_     : 
+  number of API versions currently available in the public API   
+_Function error code_ : 
+  In case of an error retrieving the values the function will return the code ERROR  
 _Additional info_     :   
+  none.
 
 ##### _ccVmGetVersions_
 
@@ -41,7 +45,11 @@ _Additional info_     :
 ##### _ccVmGetNumOfPublicKeys_
 ##### _ccVmGetPublicKeyType_
 ##### _ccVmGetPublicSshKey_
-_Function input_      : the "id" of the key (note: ccVmGetNumOfPublicKeys will give you the number of keys, do remember; "id's" start at 0  
-_Function output_     : the public SSH key for the given "id"   
-_Function error code_ : In case of an error retrieving the values the function will return the code ERROR  
+_Function input_      : 
+  the "id" of the key (note: ccVmGetNumOfPublicKeys will give you the number of keys, do remember; "id's" start at 0  
+_Function output_     : 
+  the public SSH key for the given "id"   
+_Function error code_ : 
+  In case of an error retrieving the values the function will return the code ERROR  
 _Additional info_     :   
+  none.
