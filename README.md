@@ -40,3 +40,8 @@ _Additional info_     :
 ##### _ccVmGetSecurityGroups_
 ##### _ccVmGetNumOfPublicKeys_
 ##### _ccVmGetPublicKeyType_
+##### _ccVmGetPublicSshKey_
+_Function input_      : the "id" of the key (note: ccVmGetNumOfPublicKeys will give you the number of keys, do remember; "id's" start at 0  
+_Function output_     : the public SSH key for the given "id"   
+_Function error code_ : In case of an error retrieving the values the function will return the code ERROR  
+_Additional info_     :   
