@@ -17,7 +17,7 @@ _Additional info_     : none.
 _Function input_      : 
 _Function output_     : 
 _Function error code_ : In case of an error retrieving the values the function will return the code ERROR  
-_Additional info_     : none.
+_Additional info_     : none
 
 ##### _ccVmGetAmiId_
 _Function input_      : 
