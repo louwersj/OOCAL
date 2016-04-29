@@ -1,0 +1,5 @@
+# source the configuration file containing the configuration of all functions and lib's
+source /opt/oopcal/conf/oopcal.conf
+
+# source the Oracle Public Cloud Compute server functions library.
+source /opt/oopcal/lib/functions/opc_comp_api_functions.lib
