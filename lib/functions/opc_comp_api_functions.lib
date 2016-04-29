@@ -271,7 +271,7 @@
     curlStatus=$?
 
     if [ "$curlStatus" -eq 0 ]; then
-      echo $ccVmpublicKeyType
+      echo $ccVmPublicKeyType
     else
         echo "ERROR"
     fi
