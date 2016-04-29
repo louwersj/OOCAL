@@ -1,0 +1,292 @@
+
+ # The function getNumOfVersions will return the number of versions that are currently available in OPCC
+ function ccVmGetNumOfVersions {
+    ccVmNumOfVersions="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmNumOfVersions | wc -l
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+ # The function getVersionsList will return a list of all API versions are available at this moment.
+ function ccVmGetVersions {
+    ccVmVersions="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmVersions
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetAmiId will return the AMI ID.
+ function ccVmGetAmiId {
+    ccVmAmiId="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmAmiId
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetAmiLaunchIndex will return the AMI launch index
+ function ccVmGetAmiLaunchIndex {
+    ccVmAmiLaunchIndex="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/ami-launch-index)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmAmiLaunchIndex
+    else
+        echo "ERROR"
+    fi
+  }
+
+
+
+# The function ccVmGetAmiManifestPath will return the AMI manifest path
+ function ccVmGetAmiManifestPath {
+    ccVmAmiManifestPath="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/ami-manifest-path)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmAmiManifestPath
+    else
+        echo "ERROR"
+    fi
+  }
+
+
+
+# The function ccVmGetAncestorAmiIds will return the ancestor AMI ID's
+ function ccVmGetAncestorAmiIds {
+    ccVmAncestorAmiIds="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/ancestor-ami-ids)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmAncestorAmiIds
+    else
+        echo "ERROR"
+    fi
+  }
+
+
+
+# The function ccVmGetBlockDeviceMapping will return the block device mapping
+ function ccVmGetBlockDeviceMapping {
+    ccVmBlockDeviceMapping="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/block-device-mapping)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmBlockDeviceMapping
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetInstanceId will return the instance ID
+ function ccVmGetInstanceId {
+    ccVmInstanceId="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/instance-id)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmInstanceId
+    else
+        echo "ERROR"
+    fi
+  }
+
+
+
+# The function ccVmGetInstanceType will return the instance type
+ function ccVmGetInstanceType {
+    ccVmInstanceType="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/instance-type)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmInstanceType
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetKernelId will return the Kernel ID
+ function ccVmGetKernelId {
+    ccVmKernelId="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/kernel-id)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmKernelId
+    else
+        echo "ERROR"
+    fi
+  }
+
+
+
+ # The function ccVmGetLocalHostname will return the local hostname
+ function ccVmGetLocalHostname {
+    ccVmLocalHostname="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/local-hostname)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmLocalHostname
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetLocalIpv4 will return the local IPV4 IP
+ function ccVmGetLocalIpv4 {
+    ccVmLocalIpv4="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/local-ipv4)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmLocalIpv4
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+ # The function ccVmGetProductCodes will return the product codes
+ function ccVmGetProductCodes {
+    ccVmProductCodes="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/product-codes)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmProductCodes
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetPublicHostname will return the public hostname
+ function ccVmGetPublicHostname {
+    ccVmPublicHostname="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/public-hostname)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmPublicHostname
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetPublicIpv4 will return the public IPV4 IP
+ function ccVmGetPublicIpv4 {
+    ccVmPublicIpv4="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/public-ipv4)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmPublicIpv4
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetRamdiskId will return the ramdisk ID
+ function ccVmGetRamdiskId {
+    ccVmRamdiskId="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/ramdisk-id)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmRamdiskId
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetReservationId will return the reservation ID
+ function ccVmGetReservationId {
+    ccVmReservationId="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/reservation-id)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmReservationId
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetSecurityGroups will return the security groups
+ function ccVmGetSecurityGroups{
+    ccVmSecurityGroups="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/security-groups)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmSecurityGroups
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetNumOfPublicKeys will return the number of public keys
+ function ccVmGetNumOfPublicKeys {
+    ccVmNumOfPublicKeys="$(curl -m $ccVmApiMaxWait -f -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/public-keys/)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVMNumOfPublicKeys | wc -l
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetPublicKeyType will return the public key type
+ function ccVmGetPublicKeyType {
+    ccVmPublicKeyType="$(curl -m $ccVmApiMaxWait -f -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/public-keys/$1)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmpublicKeyType
+    else
+        echo "ERROR"
+    fi
+ }
+
+
+
+# The function ccVmGetPublicSshKey will return the public key
+ function ccVmGetPublicSshKey {
+    ccvmPublicSshKey="$(curl -m $ccVmApiMaxWait -f -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/public-keys/$1/openssh-key)"
+    curlStatus=$?
+
+    if [ "$curlStatus" -eq 0 ]; then
+      echo $ccVmPublicSshKey
+    else
+        echo "ERROR"
+    fi
+ }
