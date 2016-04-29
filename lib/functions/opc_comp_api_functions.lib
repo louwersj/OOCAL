@@ -238,7 +238,7 @@
 
 
 # The function ccVmGetSecurityGroups will return the security groups
- function ccVmGetSecurityGroups{
+ function ccVmGetSecurityGroups {
     ccVmSecurityGroups="$(curl -m $ccVmApiMaxWait --fail -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/security-groups)"
     curlStatus=$?
 
