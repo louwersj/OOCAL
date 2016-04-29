@@ -1,0 +1,9 @@
+Status files located in /opt/oopcal/status are used to set or check the status of oopcal.
+
+status_firstboot
+file is used to set and check the first boot options of oopcal. If the firstboot options
+within oopcal are used the status_firstboot is checked. If the value is 0 the firstboot
+scripts will be executed. In case the value is 1 it is assumed that the firstboot has
+already been executed and nothing is done. Setting the status back from 1 to 0 manually
+is not promoted and you have to ensure you understand the actions that will be executed
+during the next boot of your machine.
