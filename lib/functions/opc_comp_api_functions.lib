@@ -281,7 +281,7 @@
 
 # The function ccVmGetPublicSshKey will return the public key
  function ccVmGetPublicSshKey {
-    ccvmPublicSshKey="$(curl -m $ccVmApiMaxWait -f -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/public-keys/$1/openssh-key)"
+    ccVmPublicSshKey="$(curl -m $ccVmApiMaxWait -f -s $ccVmApiBaseUrl$ccVmApiVersion/meta-data/public-keys/$1/openssh-key)"
     curlStatus=$?
 
     if [ "$curlStatus" -eq 0 ]; then
