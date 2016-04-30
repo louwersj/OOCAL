@@ -11,6 +11,8 @@ to make use of the OOPCAL functions you will have to ensure that you include OOP
 
 source /opt/oopcal/lib/oopcal.lib
 
+To find usable examples on how you can use OOPCAL please refer to the example directory which holds some example scripts that can be used as a reference for developers who intend to build their own custom scripts based upon OOPCAL
+
 ### General use - first boot
 - to be completed - 
 
