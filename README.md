@@ -1,5 +1,7 @@
 # OOPCAL - Open Oracle Public Cloud API Library
-OOCAL, Open Oracle Public Cloud API Library is set of pre-defind bash functions and scripts to be used with the Oracle Public cloud.
+OOCAL, Open Oracle Public Cloud API Library is set of pre-defind bash functions and scripts to be used with the Oracle Public cloud. The general intend is to provide standard functions, scripts and solutions to be used with Oracle cloud products to enable automation when deploying new instances and code on the Oracle Public Cloud. This includes functions like first-boot options when deploying a new compute instance. 
+
+By using OOPCAL developers who promote products to the Oracle Public Cloud can easily make use of the standard functions provided by both Oracle and the OOPCAL solution. 
 
 ## Compute Cloud Functions
 All functions used for the compute functions from th Oracle Public Cloud are stored in the opc_comp_api_functions.lib functions library. The below mentiond functions can be found in this library. 
