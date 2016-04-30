@@ -9,7 +9,7 @@ The current status is ALPHA - v01. This means that we are currently working on t
 ### General use - custom scripting
 to make use of the OOPCAL functions you will have to ensure that you include OOPCAL by calling it in your bash script by using the below call to OOPCAL:
 
-source /opt/oopcal/lib/oopcal.lib
+_source /opt/oopcal/lib/oopcal.lib_
 
 To find usable examples on how you can use OOPCAL please refer to the example directory which holds some example scripts that can be used as a reference for developers who intend to build their own custom scripts based upon OOPCAL
 
