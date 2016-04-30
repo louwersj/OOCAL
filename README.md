@@ -3,6 +3,17 @@ OOCAL, Open Oracle Public Cloud API Library is set of pre-defind bash functions 
 
 By using OOPCAL developers who promote products to the Oracle Public Cloud can easily make use of the standard functions provided by both Oracle and the OOPCAL solution. 
 
+### current project status and version
+The current status is ALPHA - v01. This means that we are currently working on the first stable release of OOPCAL. We do NOT recommend using OOPCAL in production yet. We do encourage developers at this moment to participate in supporting the development and to help us develop the first stable release. 
+
+### General use - custom scripting
+to make use of the OOPCAL functions you will have to ensure that you include OOPCAL by calling it in your bash script by using the below call to OOPCAL:
+
+source /opt/oopcal/lib/oopcal.lib
+
+### General use - first boot
+- to be completed - 
+
 ## Compute Cloud Functions
 All functions used for the compute functions from th Oracle Public Cloud are stored in the opc_comp_api_functions.lib functions library. The below mentiond functions can be found in this library. 
 
